@@ -11,8 +11,8 @@ class Formatter {
      let arr = string.split(" ")
      for(let i = 0 ; i < arr.length ; i++)
       {
-        arr[0].toUpperCase()
         arr[i] !== not[i] ? arr[i].capitalize : arr[i]
+        arr[0].toUpperCase()
       }
 
      return arr.join(" ")
