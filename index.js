@@ -12,7 +12,7 @@ class Formatter {
      for(let i = 0 ; i < arr.length ; i++)
       {
         arr[0].toUpperCase()
-        arr[i] !== not[i] ? arr[i].capitalize(arr) : arr[i]
+        arr[i] !== not[i] ? arr[i].capitalize: arr[i]
       }
 
      return arr.join(" ")
