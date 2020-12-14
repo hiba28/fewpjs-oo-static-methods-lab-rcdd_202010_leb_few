@@ -7,7 +7,7 @@ class Formatter {
     return string.replace(/[^A-Za-z0-9 '-]/g, '')
   }
   static titleize (string){
-     let not = ["the", "a"," an", "but", "of", "and", "for", "at", "by", "from"]
+     let not = ["the", "a","an", "but", "of", "and", "for", "at", "by", "from"]
      let arr = string.split(" ")
      let output = []
      for(let i = 0 ; i < arr.length ; i++)
