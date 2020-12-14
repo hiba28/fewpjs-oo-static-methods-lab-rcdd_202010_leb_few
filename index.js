@@ -17,6 +17,6 @@ class Formatter {
           output.push(arr[i].charAt(0).toUpperCase())
       }
 
-     return output.join(" ")
+     return output.join("")
   }
 }
