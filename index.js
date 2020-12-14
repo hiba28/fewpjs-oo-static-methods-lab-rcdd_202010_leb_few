@@ -14,7 +14,7 @@ class Formatter {
         arr[0].toUpperCase()
         arr[i] !== not[i] ? arr[i].capitalize : arr[i]
       }
-        
+
      return arr.join(" ")
   }
 }
