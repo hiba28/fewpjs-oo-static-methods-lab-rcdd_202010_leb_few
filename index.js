@@ -9,9 +9,12 @@ class Formatter {
   static titleize (string){
      let not = ["the", "a"," an", "but", "of", "and", "for", "at", "by", "from"]
      let arr = string.split(" ")
-     arr[0].toUpperCase()
      for(let i = 0 ; i < arr.length ; i++)
-      arr[i] !== not[i] ? arr[i].capitalize : arr[i]
+      {
+        arr[0].toUpperCase()
+        arr[i] !== not[i] ? arr[i].capitalize : arr[i]
+      }
+        
      return arr.join(" ")
   }
 }
