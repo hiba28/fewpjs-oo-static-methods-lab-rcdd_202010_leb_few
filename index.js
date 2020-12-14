@@ -16,8 +16,6 @@ class Formatter {
         else{
           if(arr[i] !== not[i])
             output.push(arr[i].charAt(0).toUpperCase() + arr[i].slice(1))
-          }else{
-            arr[i] = arr[i]
           }
       }
      return output.join(" ")
