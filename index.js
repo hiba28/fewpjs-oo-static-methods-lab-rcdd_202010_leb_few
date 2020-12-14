@@ -12,9 +12,11 @@ class Formatter {
      let output = []
      for(let i = 0 ; i < arr.length ; i++)
       {
-        if(i === 0) output.push(arr[i])
-        if(arr[i] !== not[i])
-          output.push(arr[i].charAt(0).toUpperCase() + arr[i].slice(1))
+        if(i === 0) output.push(arr[i]) 
+        else{
+          if(arr[i] !== not[i])
+            output.push(arr[i].charAt(0).toUpperCase() + arr[i].slice(1))
+          }
       }
 
      return output.join(" ")
