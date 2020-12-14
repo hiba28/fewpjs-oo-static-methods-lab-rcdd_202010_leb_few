@@ -9,6 +9,7 @@ class Formatter {
   static titleize (string){
      let not = ["the", "a"," an", "but", "of", "and", "for", "at", "by", "from"]
      let arr = string.split(" ")
-     arr.forEach(e => e !== not ? e.toUpperCase() : e)
+     for(word of arr)
+      e => e !== not ? e.toUpperCase() : e
   }
 }
