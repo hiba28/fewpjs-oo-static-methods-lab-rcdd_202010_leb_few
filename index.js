@@ -4,7 +4,7 @@ class Formatter {
     return string.charAt(0).toUpperCase() + string.slice(1)
   }
   static sanitize (string){
-    return string.replace(`[^A-Za-z0-9-' ]+/g`,'')
+    return string.replace(`/[^A-Za-z0-9-' ]/g`,'')
   }
   static titleize (string){
      let not = ["the", "a"," an", "but", "of", "and", "for", "at", "by", "from"]
@@ -18,7 +18,6 @@ class Formatter {
             output.push(arr[i].charAt(0).toUpperCase() + arr[i].slice(1))
           }
       }
-
      return output.join(" ")
   }
 }
