@@ -7,6 +7,8 @@ class Formatter {
     return string.replace(`[^A-Za-z0-9-']+/g`,'')
   }
   static titleize (string){
-     ["the", "a"," an", but, of, and, for, at, by, and from]
+     let not = ["the", "a"," an", "but", "of", "and", "for", "at", "by", "from"]
+     let arr = string.split(" ")
+     arr.forEach(e => e !== not ? e.toUpperCase() : e)
   }
 }
