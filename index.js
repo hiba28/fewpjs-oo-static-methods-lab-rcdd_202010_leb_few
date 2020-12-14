@@ -16,9 +16,8 @@ class Formatter {
         else{
           if(not.includes(arr[i]))
             output.push(arr[i])
-          else{
+          else
             output.push(this.capitalize(arr[i]))
-          }
         }
       }
      return output.join(" ")
