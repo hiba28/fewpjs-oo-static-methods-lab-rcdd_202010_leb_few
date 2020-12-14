@@ -15,7 +15,7 @@ class Formatter {
         if(i === 0) output.push(this.capitalize(arr[i]))
         else{
           if(arr[i] !== not[i])
-            output.push(arr[i].charAt(0).toUpperCase() + arr[i].slice(1))
+            output.push(this.capitalize(arr[i]))
           }
       }
      return output.join(" ")
