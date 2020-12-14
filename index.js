@@ -10,7 +10,7 @@ class Formatter {
      let not = ["the", "a"," an", "but", "of", "and", "for", "at", "by", "from"]
      let arr = string.split(" ")
      for(let i = 0 ; i < arr.length ; i++)
-      arr[i] !== not[i] ? a[i].toUpperCase() : a[i]
+      arr[i] !== not[i] ? arr[i].toUpperCase() : arr[i]
      return arr
   }
 }
